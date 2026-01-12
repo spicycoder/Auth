@@ -9,6 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.Keycloak" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ExternalAuth\ExternalAuth.csproj" />
     <ProjectReference Include="..\SimpleAuth\SimpleAuth.csproj" />
   </ItemGroup>
 

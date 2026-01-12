@@ -18,7 +18,26 @@ dotnet ef database update -p .\SimpleAuth\SimpleAuth.csproj -s .\SimpleAuth\Simp
 
 - [x] Cookie based Auth
 - [x] Bearer token based Auth
-- [ ] JWT Implementation
+- [x] JWT Implementation using `Keycloak` IdP
 - [ ] Load Balancer Scenario
-- [ ] IdP Integration - `Keycloak`
 - [ ] SSO
+
+---
+
+## Token from Keycloak
+
+**Endpoint:**  
+`POST` <http://localhost:8282/realms/AuthRealm/protocol/openid-connect/token>
+
+**Body:**
+`x-www-form-urlencoded`
+
+| Key | Value |
+| --- | --- |
+| grant_type | password |
+| client_id | auth-public-client |
+| scope | email openid |
+| username | hello@world.com |
+| password | helloWorld18! |
+
+**Follow:** <https://youtu.be/HAvCoQ0tOTs?si=H8CsGmlNZfdetiiQ>

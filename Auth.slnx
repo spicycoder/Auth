@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="Auth.AppHost/Auth.AppHost.csproj" />
   <Project Path="Auth.ServiceDefaults/Auth.ServiceDefaults.csproj" />
+  <Project Path="ExternalAuth/ExternalAuth.csproj" />
   <Project Path="SimpleAuth/SimpleAuth.csproj" />
 </Solution>
